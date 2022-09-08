@@ -25,7 +25,8 @@ def register():
             error = "Usuario {} se encuentra registrado.".format(username)
         if error is None:
             c.execute(
-                "INSERT INTO user(username, password) values(%s, %s)", (username, generate_password_hash(password))
+                "INSERT INTO user(username, password) values(%s, %s)", 
+                (username, generate_password_hash(password))
             )
             db.commit()
             return redirect(url_for("auth.login"))
