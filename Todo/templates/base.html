@@ -5,7 +5,7 @@
     <h1>Todo List</h1>
     <ul>
         {% if g.user %}
-            <li><span>{{ g.user['username'] }}</span></li>
+            <li><span class="username">{{ g.user['username'] }}</span></li>
             <li><a href="{{ url_for('auth.logout') }}">Cerrar sesión</a></li>
         {% else %}
             <li><a href="{{ url_for('auth.register') }}">Registrarse</a></li>

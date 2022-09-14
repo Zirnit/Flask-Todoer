@@ -1,0 +1,20 @@
+body {
+    background-color: #ddd;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.username {
+    text-transform: uppercase;
+}
+
+.todo {
+    color: #090;
+}
+
+.about {
+    color: #009
+}
